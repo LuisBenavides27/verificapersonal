@@ -30,37 +30,21 @@
                                             @endif        
 
                                             <div class="col sm:col-span-4">
-                                                <x-jet-label for="cedula" value="{{ __('Cedula') }}" />
-                                                <x-jet-input id="cedula" type="text" class="mt-1 block w-full"  value="{{$item->cedula}}" readonly/>
-                                                    <br>                                        
+                                              
                                                 <x-jet-label for="nombres" value="{{ __('Nombres') }}" />
                                                 <x-jet-input id="nombres" type="text" class="mt-1 block w-full"  value="{{$item->nombres}}" readonly/>                                                    
                                                     <br>                                        
-                                                <x-jet-label for="cedula" value="{{ __('Cedula') }}" />
-                                                <x-jet-input id="cedula" type="text" class="mt-1 block w-full"  value="{{$item->cedula}}" readonly/> 
-                                                    <br>
-                                                   
+                                                                                                 
                                                 <x-jet-label for="sexo" value="{{ __('Sexo') }}" />
                                                 <x-jet-input id="sexo" type="text" class="mt-1 block w-full"  value="{{$item->sexo}}" readonly/> 
                                                                                
                                             </div> 
-                                            <div class="col sm:col-span-4">
-                                                <x-jet-label for="fecha_nacimiento" value="{{ __('Fecha de nacimiento') }}" />
-                                                <x-jet-input id="fecha_nacimiento" type="date" class="mt-1 block w-full"  value="{{$item->fecha_nacimiento}}" readonly/> 
-                                                    <br>
-                                                <x-jet-label for="fecha_expedicion" value="{{ __('Fecha de expedicion') }}" />
-                                                <x-jet-input id="fecha_expedicion" type="date" class="mt-1 block w-full"  value="{{$item->fecha_expedicion}}" readonly/>
-                                                    <br>
-                                                <x-jet-label for="Grupo_Sanguineo" value="{{ __('Grupo Sanguineo') }}" />
-                                                <x-jet-input id="Grupo_Sanguineo" type="text" class="mt-1 block w-full"  value="{{$item->Grupo_Sanguineo}}" readonly/>                                    
-                                            </div> 
-                                                                        
+
+                                                                     
                                             <div class="col sm:col-span-4">
                                                 <x-jet-label for="cargo" value="{{ __('Cargo') }}" />
                                                 <x-jet-input id="cargo" type="text" class="mt-1 block w-full"  value="{{$item->cargo}}" readonly/>  
-                                                    <br>
-                                                <x-jet-label for="lugar_nacimiento" value="{{ __('Lugar de nacimiento') }}" />
-                                                <x-jet-input id="lugar_nacimiento" type="text" class="mt-1 block w-full"  value="{{$item->lugar_nacimiento}}" readonly/>
+                                                                                                   
                                                     <br>
                                                 <x-jet-label for="altura" value="{{ __('Altura') }}" />
                                                 <x-jet-input id="altura" type="text" class="mt-1 block w-full"  value="{{$item->altura}} cm" readonly/>                                      
