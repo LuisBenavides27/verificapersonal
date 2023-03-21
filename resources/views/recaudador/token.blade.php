@@ -8,6 +8,7 @@
                 <br><br>
                 @livewire('generate-token-button')
                 <br><br>
+                
             </div>
         </div>
     </div>
@@ -19,3 +20,8 @@
         text-align: center;
     }
 </style>
+<script>
+    function recarga(){       
+        setTimeout("location.reload()", 300000);
+    }
+</script>

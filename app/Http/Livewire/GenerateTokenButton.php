@@ -16,12 +16,12 @@ class GenerateTokenButton extends Component
         //$ide = auth()->user()->id;
         $this->token = Str::random(8);
         Token::create(['token' => $this->token, 'user_id' => auth()->user()->id]);
+
     }
 
 
     public function render()
     {
-       
         return view('livewire.generate-token-button');
     }
 }
