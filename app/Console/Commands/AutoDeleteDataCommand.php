@@ -31,5 +31,6 @@ class AutoDeleteDataCommand extends Command
     {
        // return Command::SUCCESS;
         DB::table('nombre_de_la_tabla')->where('created_at', '<', Carbon::now()->subMicroseconds(50000))->delete();
+       // DB::table('tokens')->where('created_at', '<', Carbon::now()->subMinutes(5))->delete();
     }
 }

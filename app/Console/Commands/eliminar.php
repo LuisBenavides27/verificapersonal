@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use Carbon\Carbon;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
 
@@ -28,6 +29,7 @@ class eliminar extends Command
      */
     public function handle()
     {
-        DB::table('tokens')->delete();
+        // DB::table('tokens')->delete();
+        DB::table('tokens')->where('created_at', '<', Carbon::now()->subMinutes(5))->delete();
     }
 }

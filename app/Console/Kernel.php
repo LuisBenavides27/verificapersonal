@@ -15,12 +15,12 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-         $schedule->command('test:task')->everyFiveMinutes();
+         $schedule->command('test:task');
    
     }
 
     /**
-     * Register the commands for the application.
+     * Register the commands for the application
      *
      * @return void
      */
