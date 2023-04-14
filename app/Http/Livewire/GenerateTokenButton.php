@@ -14,7 +14,9 @@ class GenerateTokenButton extends Component
     public function generateToken()
     {
         //$ide = auth()->user()->id;
-        $this->token = Str::random(8);
+        $random_string = Str::random(8);
+        $random_string = str_replace(['i', 'l','I','L'], ['x', 'y'], $random_string);
+        $this->token = $random_string;
         Token::create(['token' => $this->token, 'user_id' => auth()->user()->id]);
 
     }

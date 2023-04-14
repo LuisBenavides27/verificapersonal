@@ -14,10 +14,9 @@
                 <thead>
                     <tr>
                         <th> Id </th>
-                        <th > Nombre </th>
+                        <th> Nombre </th>
                         <th> Email </th>
-                        <th> Rol </th>
-                                           
+                        <th> Rol </th>                                           
                     </tr>
                 </thead>
 

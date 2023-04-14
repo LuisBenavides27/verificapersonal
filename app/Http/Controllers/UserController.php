@@ -36,7 +36,7 @@ class UserController extends Controller
     public function store(Request $request)
     {
        $request->validate([
-            'cedula' => 'required|unique:datos',
+            'cedula' => 'required|unique:datos|integer',
             'nombres' => 'required',
             'cargo' => 'required',
             'lugar_nacimiento' => 'required',
