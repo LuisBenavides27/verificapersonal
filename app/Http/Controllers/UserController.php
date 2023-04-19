@@ -98,7 +98,7 @@ class UserController extends Controller
 
     public function actualizar(Request $request){
         $request->validate([
-            'cedula' => 'required',
+          //  'cedula' => 'required',
             'nombres' => 'required',
             'cargo' => 'required',
             'lugar_nacimiento' => 'required',
@@ -111,7 +111,7 @@ class UserController extends Controller
 
         if($request){
                 $users = DB::table('datos')->where('cedula', $request->cedula)->update([
-                    'cedula' => $request->cedula,
+                 //   'cedula' => $request->cedula,
                     'nombres' => $request->nombres,
                     'cargo' => $request->cargo,
                     'lugar_nacimiento' => $request->lugar_nacimiento,

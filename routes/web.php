@@ -35,10 +35,13 @@ Route::get('users.reset/{users}', [UserController::class,'reset'])->name('users.
 Route::resource('users',UserController::class)->names('users')
 ->middleware('auth');
 
-Route::get('datos.imagen/{user}',[datosController::class,'imagen'])->name('datos.imagen');
-Route::post('datos.foto',[datosController::class,'foto'])->name('datos.foto');
+Route::get('datos.imagen/{user}',[datosController::class,'imagen'])
+->middleware('auth')->name('datos.imagen');
+Route::post('datos.foto',[datosController::class,'foto'])
+->middleware('auth')->name('datos.foto');
 
-Route::post('datos.subir',[datosController::class,'subir'])->name('datos.subir');
+Route::post('datos.subir',[datosController::class,'subir'])
+->middleware('auth')->name('datos.subir');
 
 
 

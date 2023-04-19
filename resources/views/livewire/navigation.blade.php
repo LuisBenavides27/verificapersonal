@@ -25,6 +25,8 @@
           <a  href="/" class="flex flex-shrink-0 items-center">
             <img class="block h-8 w-auto lg:hidden" src="{{asset('storage/fondos/SuperGIROS.png')}}" >
             <img class="hidden h-8 w-auto lg:block" src="{{asset('storage/fondos/SuperGIROS.png')}}" >
+            <img class="block h-8 w-auto lg:hidden" src="{{asset('storage/fondos/servicio.png')}}" >
+            <img class="hidden h-8 w-auto lg:block" src="{{asset('storage/fondos/servicio.png')}}" >
           </a>
 
           <div class="hidden sm:ml-6 sm:block">

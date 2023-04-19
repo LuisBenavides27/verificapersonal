@@ -75,14 +75,14 @@
             
                                     <div class="col sm:col-span-4">
                                         <x-jet-label for="lugar_nacimiento" value="{{ __('Lugar de nacimiento') }}" />
-                                        <x-jet-input name="lugar_nacimiento" :value="old('lugar_nacimiento')" value="{{ $item->sexo}}" type="text" class="mt-1 block w-full"  required/> 
+                                        <x-jet-input name="lugar_nacimiento" :value="old('lugar_nacimiento')" value="{{ $item->lugar_nacimiento}}" type="text" class="mt-1 block w-full"  required/> 
                                         @error('lugar_nacimiento')
                                             <small class="text-danger">{{$message}}</small>
                                         @enderror                                        
                                     </div>  
             
                                     <div class="col sm:col-span-4">
-                                        <x-jet-label for="Grupo_Sanguineo" value="{{ __('Grupo Sanguineo') }}" />
+                                        <x-jet-label for="Grupo_Sanguineo" value="{{ __('Estado') }}" />
                                         <x-jet-input name="Grupo_Sanguineo" :value="old('Grupo_Sanguineo')" type="text" class="mt-1 block w-full" value="{{ $item->Grupo_Sanguineo}}" required/> 
                                         @error('Grupo_Sanguineo')
                                             <small class="text-danger">{{$message}}</small>

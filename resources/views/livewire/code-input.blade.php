@@ -37,6 +37,9 @@
                                                                                                  
                                                 <x-jet-label for="sexo" value="{{ __('Sexo') }}" />
                                                 <x-jet-input id="sexo" type="text" class="mt-1 block w-full"  value="{{$item->sexo}}" readonly/> 
+                                                    <br>
+                                                <x-jet-label  value="{{ __('Zona') }}" />
+                                                <x-jet-input  type="text" class="mt-1 block w-full"  value="{{$item->lugar_nacimiento}}" readonly/>  
                                                                                
                                             </div> 
 
@@ -46,8 +49,8 @@
                                                 <x-jet-input id="cargo" type="text" class="mt-1 block w-full"  value="{{$item->cargo}}" readonly/>  
                                                                                                    
                                                     <br>
-                                                <x-jet-label for="altura" value="{{ __('Altura') }}" />
-                                                <x-jet-input id="altura" type="text" class="mt-1 block w-full"  value="{{$item->altura}} cm" readonly/>                                      
+                                                <x-jet-label for="altura" value="{{ __('Estado') }}" />
+                                                <x-jet-input id="altura" type="text" class="mt-1 block w-full"  value="{{$item->Grupo_Sanguineo}} " readonly/>                                      
                                             </div>  
                                             
                                         </div>                              
